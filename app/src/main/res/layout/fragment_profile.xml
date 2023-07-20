@@ -9,13 +9,13 @@
     tools:context=".ui.fragments.profile.ProfileFragment">
 
 
-
     <Button
         android:id="@+id/login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="@string/login_button_name"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/registration_btn"
         app:layout_constraintEnd_toEndOf="@+id/registration_btn"
         app:layout_constraintHorizontal_bias="0.5"
@@ -27,22 +27,21 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="@string/registration_button_name"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/logout_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Почта"
-        android:textStyle="bold"
-        android:textSize="32sp"
+        android:layout_marginBottom="32dp"
+        android:text="Log Out"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/login_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/login_btn"
+        app:layout_constraintStart_toStartOf="@+id/login_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

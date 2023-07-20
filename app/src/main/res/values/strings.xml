@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">KtorNoteApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="login_button_name">Войти</string>
-    <string name="password">Пароль</string>
-    <string name="email">Почта</string>
-    <string name="repeat_password">Повторите пароль</string>
-    <string name="registration_button_name">Зарегистрироваться</string>
+    <string name="login_button_name">Log In</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="registration_button_name">Sign Up</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
 </resources>
