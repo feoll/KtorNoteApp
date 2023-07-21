@@ -10,7 +10,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.ktornoteapp.databinding.FragmentProfileBinding
 import com.example.ktornoteapp.ui.fragments.base.BaseFragment
-import com.example.ktornoteapp.ui.fragments.login.LoginFragmentDirections
 import com.example.ktornoteapp.ui.viewmodels.AuthViewModel
 import com.example.ktornoteapp.utils.Resource
 import dagger.hilt.android.AndroidEntryPoint

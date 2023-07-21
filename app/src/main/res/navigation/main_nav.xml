@@ -9,21 +9,12 @@
         android:id="@+id/loginFragment"
         android:name="com.example.ktornoteapp.ui.fragments.login.LoginFragment"
         android:label="Login"
-        tools:layout="@layout/fragment_login" >
-        <action
-            android:id="@+id/action_loginFragment_to_notesFragment"
-            app:destination="@id/notesFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
+        tools:layout="@layout/fragment_login" />
     <fragment
         android:id="@+id/registrationFragment"
         android:name="com.example.ktornoteapp.ui.fragments.registration.RegistrationFragment"
         android:label="Registration"
-        tools:layout="@layout/fragment_registration" >
-        <action
-            android:id="@+id/action_registrationFragment_to_notesFragment"
-            app:destination="@id/notesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_registration" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.ktornoteapp.ui.fragments.profile.ProfileFragment"
@@ -31,10 +22,12 @@
         tools:layout="@layout/fragment_profile" >
         <action
             android:id="@+id/action_profileFragment_to_registrationFragment"
-            app:destination="@id/registrationFragment" />
+            app:destination="@id/registrationFragment"
+            app:popUpTo="@id/notesFragment" />
         <action
             android:id="@+id/action_profileFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/notesFragment" />
     </fragment>
     <fragment
         android:id="@+id/noteDetailsFragment"
@@ -49,5 +42,8 @@
         <action
             android:id="@+id/action_notesFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_noteDetailsFragment"
+            app:destination="@id/noteDetailsFragment" />
     </fragment>
 </navigation>

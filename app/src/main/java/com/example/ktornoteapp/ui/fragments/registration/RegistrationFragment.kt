@@ -11,7 +11,6 @@ import com.example.ktornoteapp.data.models.params.LoginParams
 import com.example.ktornoteapp.data.models.params.RegistrationParams
 import com.example.ktornoteapp.databinding.FragmentRegistrationBinding
 import com.example.ktornoteapp.ui.fragments.base.BaseFragment
-import com.example.ktornoteapp.ui.fragments.login.LoginFragmentDirections
 import com.example.ktornoteapp.ui.viewmodels.AuthViewModel
 import com.example.ktornoteapp.utils.Resource
 import kotlinx.coroutines.launch
@@ -49,8 +48,7 @@ class RegistrationFragment : BaseFragment<FragmentRegistrationBinding>() {
             when (resource) {
                 is Resource.Success -> {
                     hideProgressBar()
-                    val direction = RegistrationFragmentDirections.actionRegistrationFragmentToNotesFragment()
-                    findNavController().navigate(direction)
+                    findNavController().navigateUp()
                 }
 
                 is Resource.Error -> {

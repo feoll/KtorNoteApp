@@ -48,8 +48,7 @@ class LoginFragment: BaseFragment<FragmentLoginBinding>() {
             when(resource) {
                 is Resource.Success -> {
                     hideProgressBar()
-                    val direction = LoginFragmentDirections.actionLoginFragmentToNotesFragment()
-                    findNavController().navigate(direction)
+                    findNavController().navigateUp()
                 }
                 is Resource.Error -> {
                     Toast.makeText(context, resource.message, Toast.LENGTH_SHORT).show()
